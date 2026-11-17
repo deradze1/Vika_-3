@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#4b206d">
+  <meta name="description" content="Маленькая фиолетовая сказка ко дню рождения 💜">
+  <title>Для моей именинницы 💜</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+ <div class="background-decor" aria-hidden="true"><span class="decor decor-1">💜</span><span class="decor decor-2">✦</span><span class="decor decor-3">💞</span><span class="decor decor-4">✧</span><span class="decor decor-5">✨</span><span class="decor decor-6">💜</span><span class="decor decor-7">✧</span><span class="decor decor-8">🌸</span><span class="decor decor-9">♡</span><span class="decor decor-10">✨</span><span class="decor decor-11">💞</span></div>
+ <div class="confetti-layer" id="confetti" aria-hidden="true"></div>
+ <main class="app" id="app">
+  <header class="topbar"><span class="top-mark">♡ для тебя ♡</span><button class="music-toggle" id="musicToggle" type="button" aria-label="Включить музыку" aria-pressed="false">♫ <span id="musicLabel">Включить музыку</span></button></header>
+  <div class="progress" id="progress" aria-label="Прогресс путешествия"><span class="active"></span><span></span><span></span><span></span><span></span></div>
+  <section class="page is-active" id="page-0" aria-label="Начало" data-page="0">
+   <div class="party-flags" aria-hidden="true">🎀 ✨ 💜 ✨ 🎀</div>
+   <div class="hanging-stars" aria-hidden="true"><span>✧</span><span>♡</span><span>✧</span></div>
+   <div class="hero-art"><img class="hero-unicorn left" src="assets/unicorn-left.png" alt=""><img class="kuromi" src="assets/kuromi-cloud.png" alt="Куроми на облачке в праздничном колпаке"><img class="hero-unicorn right" src="assets/unicorn-right.png" alt=""></div>
+   <span class="eyebrow">Маленький волшебный сюрприз</span>
+   <h1>Для моей<br><em>именинницы</em></h1>
+   <p class="hero-intro">Здесь спрятано кое-что очень важное...</p>
+   <div class="jinx-frame"><img src="assets/jinx-card.png" alt="Милая миниатюрная Джинкс улыбается"></div>
+   <button class="primary-button" data-next type="button">Начать путешествие 💜 <span aria-hidden="true">✧</span></button>
+   <div class="hero-hearts" aria-hidden="true">♡　✧　♡　✧　♡</div><span class="tiny-note">Впереди маленькое чудо ↓</span>
+  </section>
+  <section class="page" id="page-1" aria-label="Поздравление" data-page="1" hidden>
+   <div class="page-illustration">🎂 <span>🎀</span> 🎁</div>
+   <span class="eyebrow">Следующая страничка нашей сказки</span>
+   <h2>С добрым утром,<br><em>моя сладость!</em> 💜</h2>
+   <div class="glass letter"><div class="letter-icon">💌</div><p>Я хочу поздравить тебя с этим чудесным и прекрасным днём!</p><p>Пусть все твои желания исполняются, все твои усилия станут твоим успехом, а сегодняшний день будет по-настоящему особенным.</p><p class="pink">С 22 годиками, моя принцесса! 🎂💜</p><div class="letter-sign">С любовью ♡</div></div>
+   <button class="primary-button" data-next type="button">У меня есть ещё кое-что →</button>
+  </section>
+  <section class="page" id="page-2" aria-label="Воспоминания" data-page="2" hidden>
+   <div class="page-illustration">💞 🦄 💞</div>
+   <span class="eyebrow">Самые тёплые моменты</span><h2>Наши <em>воспоминания</em> ♡</h2>
+   <p class="section-subtitle">Каждый момент с тобой для меня особенный. Перелистывай карточки 💜</p>
+   <div class="memory-card glass" id="memoryCard" aria-live="polite">
+      <div class="memory-photo" id="memoryPhoto"><span>📸</span><small>Наше фото №1</small></div>
+      <p class="memory-caption" id="memoryCaption">Здесь будет наше любимое воспоминание ♡</p>
+   </div>
+   <div class="memory-controls"><button class="round-button" id="memoryPrev" aria-label="Предыдущее воспоминание">‹</button><div class="memory-dots" id="memoryDots" aria-label="Номер воспоминания"></div><button class="round-button" id="memoryNext" aria-label="Следующее воспоминание">›</button></div>
+   <p class="hint">Свайпай фото влево и вправо ✧</p>
+   <button class="primary-button" data-next type="button">Дальше в нашу сказку →</button>
+  </section>
+  <section class="page" id="page-3" aria-label="Мир Джинкс" data-page="3" hidden>
+   <span class="eyebrow">Немножко милого хаоса</span><h2>Мир <em>Джинкс</em> ♡</h2>
+   <div class="jinx-frame big"><img src="assets/jinx-card.png" alt="Миниатюрная улыбающаяся Джинкс"></div>
+   <p class="section-subtitle">Даже Джинкс заглянула поздравить тебя! И прихватила немного безумного волшебства 💜</p>
+   <div class="glass game"><span class="game-title">Поймай 5 сердечек!</span><p>Нажимай на сердечко, чтобы наполнить коробочку любовью.</p><button class="heart-button" id="heartButton" aria-label="Поймать сердечко">💜</button><div class="heart-count" id="heartCount">0 / 5 ♡</div><p class="game-result" id="gameResult" aria-live="polite"></p></div>
+   <button class="primary-button" data-next type="button">К последнему сюрпризу →</button>
+  </section>
+  <section class="page" id="page-4" aria-label="Финал" data-page="4" hidden>
+   <div class="page-illustration">🦄 🎂 🦄</div><span class="eyebrow">А теперь самое важное…</span><h2>Ты — моё <em>счастье</em> ♡</h2>
+   <div class="glass final-message"><img class="tiny-cake" src="assets/birthday-cake.png" alt="Праздничный тортик"><p>Желаю чтобы в твоей жизни было больше поводов улыбаться.</p><p>Я очень рад, что ты есть в моей жизни. Даже несмотря на то что между нами километры, ты остаёшься для меня самой близкой и важной.</p><strong>Я очень сильно тебя люблю! 💜</strong></div>
+   <div class="gift-wrap"><button class="gift-button" id="giftButton" type="button" aria-expanded="false"><span aria-hidden="true">🎁</span><small>Нажми на подарок ♡</small></button><div class="gift-reveal glass" id="giftReveal" hidden><span>💝</span><p>Моё самое большое желание — чтобы ты была счастлива.</p><p>С днём рождения, моя принцесса! ♡</p></div></div>
+   <button class="secondary-button" id="restart" type="button">↺ Посмотреть сначала</button>
+  </section>
+  <nav class="bottom-nav" aria-label="Навигация по страницам"><button id="backButton" type="button" disabled>← Назад</button><span id="pageNumber">1 из 5</span><button id="nextButton" type="button">Дальше →</button></nav>
+  <audio id="music" src="assets/music.mp3" preload="none" loop></audio>
+ </main>
+</body>
+</html>
